@@ -1,0 +1,80 @@
+﻿生成启动时间为 2013/12/2 16:27:38。
+     1>项目“E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\Jsb2cpp2Java.vcxproj”在节点 2 上(Build 个目标)。
+     1>PreBuildEvent:
+         if not exist "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\" mkdir "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\"
+         if exist "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\\Jsb2cpp2JavaRes" rd /s /q "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\\Jsb2cpp2JavaRes"
+         mkdir "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\\Jsb2cpp2JavaRes"
+         xcopy "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\*.js" "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\\Jsb2cpp2JavaRes\" /e /Y
+         xcopy "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\Resources" "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\\Jsb2cpp2JavaRes\" /e /Y
+         :VCEnd
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\jsb.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\jsb_chipmunk.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\jsb_chipmunk_constants.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\jsb_cocos2d.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\jsb_cocos2d_constants.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\jsb_cocos2d_extension.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\jsb_cocosbuilder.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\jsb_debugger.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\jsb_deprecated.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\jsb_opengl.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\jsb_opengl_constants.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\jsb_sys.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings\js\main.debug.js
+         复制了 13 个文件
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\Resources\main.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\Resources\res\CloseNormal.png
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\Resources\res\CloseSelected.png
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\Resources\res\HelloWorld.png
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\Resources\src\myApp.js
+         E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\Resources\src\resource.js
+         复制了 6 个文件
+       ClCompile:
+         D:\VS2012\VC\bin\CL.exe /c /I"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\Classes" /I"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\spidermonkey-win32\include" /I"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\external\chipmunk\include\chipmunk" /I"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\extensions" /I"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\bindings" /I"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\cocos2dx" /I"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\cocos2dx\include" /I"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\cocos2dx\kazmath\include" /I"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\cocos2dx\platform\win32" /I"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\cocos2dx\platform\third_party\win32" /I"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\CocosDenshion\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D STRICT /D DEBUG /D _DEBUG /D XP_WIN /D JS_HAVE___INTN /D JS_INTPTR_TYPE=int /D COCOS2D_DEBUG=1 /D COCOS2D_JAVASCRIPT=1 /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt main.cpp ..\Classes\AppDelegate.cpp
+         AppDelegate.cpp
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\jsutil.h(324): warning C4800: “size_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(968): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(973): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(983): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(988): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(993): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(998): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(1003): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(1008): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(1013): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(1018): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(1023): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(1028): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(1033): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(1038): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(1043): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(1049): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(1054): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(1130): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\js\value.h(1443): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\jsclass.h(315): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\scripting\javascript\spidermonkey-win32\include\jsfriendapi.h(451): warning C4800: “JSBool”: 将值强制为布尔值“true”或“false”(性能警告)
+         main.cpp
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\bin\rc.exe /D _DEBUG /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /l"0x0409" /I"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include" /IDebug.win32\ /nologo /fo"Debug.win32\game.res" game.rc 
+       PreLinkEvent:
+         if not exist "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\" mkdir "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\"
+         xcopy /Y /Q "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\scripting\javascript\spidermonkey-win32\lib\*.*" "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\"
+         xcopy /Y /Q "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\..\..\..\external\libwebsockets\win32\lib\*.*" "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\"
+         :VCEnd
+         复制了 2 个文件
+         复制了 2 个文件
+       Link:
+         D:\VS2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\Jsb2cpp2Java.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\\" libcocos2d.lib libExtensions.lib opengl32.lib glew32.lib libCocosDenshion.lib libchipmunk.lib libJSBinding.lib libcurl_imp.lib mozjs.lib ws2_32.lib sqlite3.lib pthreadVCE2.lib websockets.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\Jsb2cpp2Java.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\Jsb2cpp2Java.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
+         Debug.win32\main.obj
+         Debug.win32\AppDelegate.obj
+         "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\libcocos2d.lib"
+         "E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\libCocosDenshion.lib"
+     1>main.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR”规范)
+            正在创建库 E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\Jsb2cpp2Java.lib 和对象 E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\Jsb2cpp2Java.exp
+         Jsb2cpp2Java.vcxproj -> E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\Debug.win32\Jsb2cpp2Java.exe
+     1>已完成生成项目“E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\projects\Jsb2cpp2Java\proj.win32\Jsb2cpp2Java.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:38.75
