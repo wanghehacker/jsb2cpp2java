@@ -57,6 +57,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
     <IncludePath>E:\cocos2dx\cocos2d-x-2.2\cocos2d-x-2.2\external\emscripten\third_party\jni;$(IncludePath)</IncludePath>
+    <ReferencePath>$(OutDir);$(ReferencePath)</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
@@ -169,11 +170,13 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Jsb2cpp2JavaRes\" /e /Y</Command>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="SIMCardInfo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="SIMCardInfo.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="res\game.ico" />

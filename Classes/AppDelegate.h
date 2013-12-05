@@ -4,12 +4,32 @@
 //
 //  Created by Rohan Kuruvilla on 06/08/2012.
 //  Copyright __MyCompanyName__ 2012. All rights reserved.
-//
+
+#pragma once
 
 #ifndef  _APP_DELEGATE_H_
 #define  _APP_DELEGATE_H_
 
 #include "CCApplication.h"
+#include "jstypes.h"
+#include "jspubtd.h"
+#include "js/Value.h"
+#include "SIMCardInfo.h"
+
+	
+
+	/**
+	* 供JS调用的函数
+	*	获取电话号码
+	*/
+	JSBool getPhone(JSContext *cx, uint32_t argc, jsval *vp);
+	/**
+	* 供JS调用的函数
+	* 获取运营商的名字
+	*/
+	JSBool getProvider(JSContext *cx, uint32_t argc, jsval *vp);
+
+
 /**
  @brief    The cocos2d Application.
  
@@ -39,30 +59,6 @@ public:
      @param  the pointer of the application
      */
     virtual void applicationWillEnterForeground();
-
-
-    /**
-     *获取电话号码
-     */
-    virtual const char* getPhoneNumber();
-
-    /**
-     * 获取运营商的名字
-     */
-    virtual const char* getProviderName();
-
-	
-	/**
-	* 供JS调用的函数
-	*	获取电话号码
-	*/
-	virtual	JSBool getPhone(JSContext *cx, uint32_t argc, jsval *vp);
-
-	/**
-	* 供JS调用的函数
-	* 获取运营商的名字
-	*/
-	virtual	JSBool getProvider(JSContext *cx, uint32_t argc, jsval *vp);
 };
 
 #endif // _APP_DELEGATE_H_

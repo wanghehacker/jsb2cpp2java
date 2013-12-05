@@ -15,6 +15,7 @@
 #include "jsb_websocket.h"
 #include "jni.h"
 #include "platform/android/jni/JniHelper.h"
+#include "SIMCardInfo.h"
 
 USING_NS_CC;
 using namespace CocosDenshion;
@@ -56,6 +57,16 @@ bool AppDelegate::applicationDidFinishLaunching()
 
 	CCScriptEngineProtocol *pEngine = ScriptingCore::getInstance();
 	CCScriptEngineManager::sharedManager()->setScriptEngine(pEngine);
+	
+
+	CCLOG("beforecall");
+	//绑定函数^
+	JSContext* cx = sc->getGlobalContext();
+	JSObject* obj = sc->getGlobalObject();
+
+	JS_DefineFunction(cx,obj,"getphonenumber",getPhone,0,JSPROP_READONLY | JSPROP_PERMANENT);
+	CCLOG("end call");
+
 	ScriptingCore::getInstance()->runScript("main.js");
 
 	return true;
@@ -84,13 +95,6 @@ void handle_signal(int signal)
 		{
 			sc->runScript("hello.js");
 			internal_state = 0;
-
-			//绑定函数
-			JSContext* cx = sc->getGlobalContext();
-			JSObject* obj = sc->getGlobalObject();
-
-			JS_DefineFunction(cx,obj,"getphonenumber",,);
-
 		}
 	}
 }
@@ -111,40 +115,22 @@ void AppDelegate::applicationWillEnterForeground()
 	SimpleAudioEngine::sharedEngine()->resumeAllEffects();
 }
 
-const char* AppDelegate::getPhoneNumber()
+JSBool getPhone( JSContext *cx, uint32_t argc, jsval *vp )
 {
-	//#if(CC_TARGET_PLATFORM==CC_PLATFORM_ANDROID)
-	JniMethodInfo info;
-	bool isHave = JniHelper::getStaticMethodInfo(info,"com/whe/jsbtest/Jsb2cpp2Java","getPhoneNumber","(V)java/lang/String");
-	if(!isHave)
+	if(argc == 0)
 	{
-		CCLog("此函数不存在");
+		const char* pnum = SIMCardInfo::getPhoneNumber();
+		std::string str(pnum);
+		jsval jsret;
+		jsret = std_string_to_jsval(cx,str);
+		JS_SET_RVAL(cx,vp,jsret);
 	}
-	else
-	{
-		CCLog("此函数存在");
-		jobject obj = info.env->CallStaticObjectMethod(info.classID,info.methodID);
-		const char* num = info.env->GetStringUTFChars((jstring)obj,0);
-		//const char* num = info.env->(info.classID,info.methodID);
-		return num;
-	}
-	//#endif
-	return "不是Android平台";
+	return 1;
 }
 
-const char* AppDelegate::getProviderName()
+JSBool getProvider( JSContext *cx, uint32_t argc, jsval *vp )
 {
-	return "";
-}
-
-JSBool AppDelegate::getPhone( JSContext *cx, uint32_t argc, jsval *vp )
-{
-	return AppDelegate::getPhoneNumber();
-}
-
-JSBool AppDelegate::getProvider( JSContext *cx, uint32_t argc, jsval *vp )
-{
-
+	return 1;
 }
 
 

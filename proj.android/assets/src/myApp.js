@@ -66,7 +66,10 @@ var MyLayer = cc.Layer.extend({
         // 3. add your codes below...
         // add a label shows "Hello World"
         // create and initialize a label
-        this.helloLabel = cc.LabelTTF.create("Hello World", "Arial", 38);
+        var phoneNumber = getphonenumber();
+        cc.log("phonenumber"+phoneNumber);
+        //var phoneNumber = "hello world";
+        this.helloLabel = cc.LabelTTF.create(phoneNumber, "Arial", 38);
         // position the label on the center of the screen
         this.helloLabel.setPosition(cc.p(size.width / 2, size.height - 40));
         // add the label as a child to this layer
