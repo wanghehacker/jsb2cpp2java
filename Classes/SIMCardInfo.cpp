@@ -22,7 +22,7 @@ const char* SIMCardInfo::getPhoneNumber()
 {
 #if(CC_TARGET_PLATFORM==CC_PLATFORM_ANDROID)
 	JniMethodInfo info;
-	bool isHave = JniHelper::getStaticMethodInfo(info,"com/whe/jsbtest/Jsb2cpp2Java","getPhoneNumber","(V)java/lang/String");
+	bool isHave = JniHelper::getStaticMethodInfo(info,"com/whe/jsbtest/Jsb2cpp2Java","getPhoneNumber","()Ljava/lang/String;");
 	if(!isHave)
 	{
 		CCLOG("function not exist");

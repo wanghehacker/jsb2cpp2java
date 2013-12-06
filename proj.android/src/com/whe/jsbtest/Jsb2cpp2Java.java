@@ -36,6 +36,7 @@ public class Jsb2cpp2Java extends Cocos2dxActivity{
 	
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
+		instance = this;
 	}
 	
     static {
